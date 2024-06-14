@@ -1,0 +1,109 @@
+{
+  "color": {
+    "r": 165,
+    "g": 165,
+    "b": 165
+  },
+  "westwall": {
+    "door": {
+      "link": "room-3",
+      "preview": "forward_1.jpg",
+      "exit": "forward",
+      "exitStartX": 1,
+      "exitTargetX": 1,
+      "exitStartZ": -1200,
+      "exitTargetZ": -700,
+      "angle": -180
+    },
+    "paintings": [
+      {
+        "position": "north",
+        "src": "AI_faces/Pitts and McCuloch (2).webp",
+        "name": "Warren McCuloch and Walter Pitts",
+        "caption": "Convolution is a mathematical operation that combines two functions to produce a third function, expressing how the shape of one is modified by the other. It is widely used in signal processing, image processing, and various other fields.Convolution is a mathematical operation that combines two functions to produce a third function, expressing how the shape of one is modified by the other. It is widely used in signal processing, image processing, and various other fields."
+      },
+      {
+        "position": "south",
+        "src": "AI_faces/Seymore Pappert scaled800.webp",
+        "name": "Seymour Pappert",
+        "caption": "Seymour and Minsky . wo functions to produce a third function, expressing how the shape of one is modified by the other. It is widely used in signal processing, image processing, and various other fields."
+      }
+    ]
+  
+  },
+  "northwall": {
+    "door": {
+      "__comment": "Forward to green room",
+      "link": "room-7",
+      "preview": "backward_1.jpg",
+      "exit": "reverse",
+      "exitStartX": 1,
+      "exitTargetX": 1,
+      "exitStartZ": -1200,
+      "exitTargetZ": -700,
+      "angle": 90
+    },
+    "paintings": [
+      {
+        "position": "west",
+        "src": "AI_faces/Claude Shannon.png",
+        "name": "Claude Shannon",
+        "caption": "superism is a mathematical operation that combines two functions to produce a third function, expressing how the shape of one is modified by the other. It is widely used in signal processing, image processing, and various other fields.Convolution is a mathematical operation that combines two functions to produce a third function, expressing how the shape of one is modified by the other. It is widely used in signal processing, image processing, and various other fields."
+      },
+      {
+        "position": "east",
+        "src": "AI_faces/Norbert_Wiener.png",
+        "name": "Norbert Wiener",
+        "caption": "superism is a mathematical operation that combines two functions to produce a third function, expressing how the shape of one is modified by the other. It is widely used in signal processing, image processing, and various other fields.Convolution is a mathematical operation that combines two functions to produce a third function, expressing how the shape of one is modified by the other. It is widely used in signal processing, image processing, and various other fields."
+      }
+    ]
+  },
+  "eastwall": {
+    "door": {
+      "link": "room-7",
+      "preview": "neural_net transparant.png",
+      "exit": "reverse",
+      "exitStartX": 1,
+      "exitTargetX": 1,
+      "exitStartZ": -1200,
+      "exitTargetZ": -700,
+      "angle": 90
+    },
+    "paintings": [
+      {
+        "position": "north",
+        "src": "AI_faces/Marvin Minsky.png",
+        "name": "Marvin Minsky",
+        "caption": "Marvin Minsky,a pioneering figure in the field of artificial intelligence (AI). He co-founded the MIT Artificial Intelligence Laboratory in 1959 with John McCarthy, which quickly became a leading research center for AI. Minsky made significant contributions to the development of AI through his work on neural networks, computer vision systems, and the first electronic learning machine called SNARC, which simulated a simple neural network.\rOne of Minsky's most influential works was the book 'Perceptrons' (co-authored with Seymour Papert), which analyzed the limitations of early neural network models and contributed to the decline of research in this area for several years, a period known as the 'AI winter.'\rHowever, Minsky's later work, such as the 'Society of Mind' theory, proposed that intelligence emerges from the interaction of numerous simple components or 'agents,' which has influenced modern approaches to AI. His ideas on knowledge representation, frames, and the possibility of machine intelligence solving humanity's problems also had a lasting impact on the field."
+      },
+      {
+        "position": "south",
+        "src": "AI_faces/Herb simon demo.jpg",
+        "name": "Herb Simon",
+        "caption": "They are called 'real' because they represent actual quantities that exist in the real world, like distances, weights, temperatures, and so on. Real numbers can be positive, negative, or zero, and they go on forever in both directions without ending.\nImagine a number line that stretches infinitely in both directions. Every single point on that line represents a real number. The whole numbers (0, 1, 2, 3, ...) are evenly spaced points, but between any two whole numbers, there are an infinite number of other real numbers, like fractions and decimals.34 Some real numbers, like 1/2 or 0.75, can be expressed as fractions or terminating decimals. Others, like pi (3.14159...) or (1.41421...), have decimal representations that never end or repeat in a pattern - these are called irrational numbers.\nSo in summary, real numbers include all the counting numbers, fractions, decimals (both terminating and non-terminating), positive and negative values, and even crazy numbers like infinity and negative infinity that go on forever.23 They are the numbers we use to measure and describe the real, physical world around us. And what happens when this text overruns the box I have created for it. and do we want to include a scrolling function?\nSo in summary, real numbers include all the counting numbers, fractions, decimals (both terminating and non-terminating), positive and negative values, and even crazy numbers like infinity and negative infinity that go on forever.23 They are the numbers we use to measure and describe the real, physical world around us. And what happens when this text overruns the box I have created for it. and do we want to include a scrolling function?"
+      }
+    ]
+  },
+  "southwall": {
+    "paintings": [
+      {
+        "position": "west",
+        "src": "AI_faces/Alan_Newell.webp",
+        "name": "Alan Newell",
+        "caption": "Convolution is a mathematical operation that combines two functions to produce a third function, expressing how the shape of one is modified by the other. It is widely used in signal processing, image processing, and various other fields."
+      },
+      {
+        "position": "center",
+        "src": "AI_faces/Frank_Rosenblatt.webp",
+        "name": "Frank Rosenbaltt",
+        "caption": "Finnspång Sweden, 2009"
+      },
+      {
+        "position": "east",
+        "src": "AI_faces/John_McCarthy.webp",
+        "name": "John McCarthy",
+        "caption": "China, 2008"
+      }
+    ]
+  }
+}

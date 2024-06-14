@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mindprints Graphic Barn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="CSS/gallery.css" />
+    <script type="text/javascript" src="JS/screenEventsHandler.js"></script>
+    <script type="text/javascript" src="JS/m3d.js"></script>
+    <script type="text/javascript" src="JS/m3dhelper.js"></script>
+    <link rel="Shortcut Icon" href="/images/site/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div id="screen">
+        <canvas id="canvas">
+            Sorry, this gallery requires a web browser which supports modern open standards. The current versions of Mozilla Firefox, Google Chrome, Internet Explorer, Safari, Konqueror and Opera will work fine. Older versions of Internet Explorer, version 8 and earlier cannot view the gallery.
+        </canvas>
+        <div id="command">
+            <div class="background"></div>
+            <span id="dynamic_info">
+                Click on pictures to navigate. Click on open doors to change rooms.
+            </span>
+        </div>
+        <div id="dynamic_info2"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const canvas = document.getElementById('canvas');
+            const dynamic_info2 = document.getElementById('dynamic_info2');
+
+            canvas.addEventListener('dblclick', () => {
+                const imageOver = m3D.imageOver();
+                if (imageOver && imageOver.caption) {
+                    dynamic_info2.innerHTML = imageOver.caption;
+                    dynamic_info2.style.visibility = 'visible';
+                }
+            });
+
+            let debounceTimeout;
+            const hideDynamicInfo2 = () => {
+                clearTimeout(debounceTimeout);
+                debounceTimeout = setTimeout(() => {
+                    dynamic_info2.style.visibility = 'hidden';
+                }, 100); // Add a 100ms delay
+            };
+
+            canvas.addEventListener('mouseleave', (event) => {
+                const rect = dynamic_info2.getBoundingClientRect();
+                const inInfo2 = (
+                    event.clientX >= rect.left &&
+                    event.clientX <= rect.right &&
+                    event.clientY >= rect.top &&
+                    event.clientY <= rect.bottom
+                );
+
+                if (!inInfo2) {
+                    hideDynamicInfo2();
+                }
+            });
+
+            dynamic_info2.addEventListener('mouseleave', hideDynamicInfo2);
+        });
+
+        window.addEventListener("load", () => {
+            loadRoom("room-0x");
+        });
+    </script>
+</body>
+</html>
